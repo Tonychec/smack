@@ -14,6 +14,8 @@ class ChatVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        // addition - screens swipes on tab, swipe and when button pressed.
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
