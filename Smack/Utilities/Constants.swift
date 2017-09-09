@@ -14,12 +14,12 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 let BASE_URL = "https://testchatapi.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN  = "\(BASE_URL)account/login"
+let URL_USER_ADD = "\(BASE_URL)user/add"
 
 // Seques
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
-let UNWIDE = "unwindeToChannel"
-
+let UNWIND = "unwindeToChannel"
 
 // User defaults
 let TOKEN_KEY = "token"

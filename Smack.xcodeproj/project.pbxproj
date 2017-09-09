@@ -21,6 +21,7 @@
 		CC40149E1F5997E700EA23E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC40149C1F5997E700EA23E1 /* LaunchScreen.storyboard */; };
 		CCD9C3611F63FACC00D38CF3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9C3601F63FACC00D38CF3 /* AuthService.swift */; };
 		CCD9C3631F640E1F00D38CF3 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9C3621F640E1F00D38CF3 /* RoundedButton.swift */; };
+		CCD9C3651F641E1B00D38CF3 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9C3641F641E1A00D38CF3 /* UserDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		CC40149F1F5997E700EA23E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCD9C3601F63FACC00D38CF3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CCD9C3621F640E1F00D38CF3 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		CCD9C3641F641E1A00D38CF3 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		CCF2DED01F59AF3D00B88A9A /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		CCF2DED11F59AF3E00B88A9A /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CCF2DED21F59AF3E00B88A9A /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD9C3601F63FACC00D38CF3 /* AuthService.swift */,
+				CCD9C3641F641E1A00D38CF3 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				CC0876741F5C077C001B9B30 /* SWRevealViewController.m in Sources */,
 				CCD9C3631F640E1F00D38CF3 /* RoundedButton.swift in Sources */,
 				CC08766F1F5C02C2001B9B30 /* ChatVC.swift in Sources */,
+				CCD9C3651F641E1B00D38CF3 /* UserDataService.swift in Sources */,
 				CC08767C1F5C2563001B9B30 /* LoginVC.swift in Sources */,
 				CCD9C3611F63FACC00D38CF3 /* AuthService.swift in Sources */,
 				CC0876771F5C0CFB001B9B30 /* GradientView.swift in Sources */,
