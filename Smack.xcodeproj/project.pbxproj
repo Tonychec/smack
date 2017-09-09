@@ -19,6 +19,7 @@
 		CC4014991F5997E700EA23E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4014971F5997E700EA23E1 /* Main.storyboard */; };
 		CC40149B1F5997E700EA23E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC40149A1F5997E700EA23E1 /* Assets.xcassets */; };
 		CC40149E1F5997E700EA23E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC40149C1F5997E700EA23E1 /* LaunchScreen.storyboard */; };
+		CCD9C3611F63FACC00D38CF3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9C3601F63FACC00D38CF3 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		CC40149A1F5997E700EA23E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC40149D1F5997E700EA23E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC40149F1F5997E700EA23E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD9C3601F63FACC00D38CF3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CCF2DED01F59AF3D00B88A9A /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		CCF2DED11F59AF3E00B88A9A /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CCF2DED21F59AF3E00B88A9A /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		CC4014921F5997E700EA23E1 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				CCD9C35F1F63FA8E00D38CF3 /* Services */,
 				CC0876781F5C1DFB001B9B30 /* Utilities */,
 				CC0876751F5C0CDA001B9B30 /* View */,
 				CCF2DECF1F59AEF900B88A9A /* Supporting Files */,
@@ -122,6 +125,14 @@
 				CC08767D1F5C28AB001B9B30 /* CreateAcountVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CCD9C35F1F63FA8E00D38CF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CCD9C3601F63FACC00D38CF3 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CCF2DECF1F59AEF900B88A9A /* Supporting Files */ = {
@@ -268,6 +279,7 @@
 				CC0876741F5C077C001B9B30 /* SWRevealViewController.m in Sources */,
 				CC08766F1F5C02C2001B9B30 /* ChatVC.swift in Sources */,
 				CC08767C1F5C2563001B9B30 /* LoginVC.swift in Sources */,
+				CCD9C3611F63FACC00D38CF3 /* AuthService.swift in Sources */,
 				CC0876771F5C0CFB001B9B30 /* GradientView.swift in Sources */,
 				CC0876711F5C02D4001B9B30 /* ChannelVC.swift in Sources */,
 				CC4014941F5997E700EA23E1 /* AppDelegate.swift in Sources */,
