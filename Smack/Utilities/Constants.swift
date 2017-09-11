@@ -10,11 +10,17 @@ import Foundation
 
 typealias CompletionHandler = (_ Success: Bool) -> ()
 
-//URL Constants
+// URL Constants
 let BASE_URL = "https://testchatapi.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN  = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
+
+// Colors
+let SMACK_PURPLE_PLACEHOLDER = #colorLiteral(red: 0.2588235294, green: 0.3294117647, blue: 0.7254901961, alpha: 0.5067958048)
+
+// Notification Constants
+let NOTIF_USER_DATA_DID_CHANGE = Notification.init(name: "notifUserDataChanged")
 
 // Seques
 let TO_LOGIN = "toLogin"
@@ -27,7 +33,7 @@ let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
 
-//Header
+// Header
 let HEADER = [
     "Content-Type": "application/json; charset=utf-8"
 ]
