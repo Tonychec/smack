@@ -169,7 +169,7 @@
                                     <constraint firstAttribute="width" constant="250" id="ydP-DU-swh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -177,6 +177,9 @@
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="xz1-hm-hNB" eventType="touchUpInside" id="uYP-bQ-oLV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Oy-n2-m8D">
                                 <rect key="frame" x="91" y="336" width="193" height="26"/>
@@ -202,7 +205,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="h79-5W-I2z">
                                 <rect key="frame" x="62.5" y="160" width="250" height="86"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-Nt-05E">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-Nt-05E">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="oaC-4D-fTD"/>
@@ -238,23 +241,32 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="QnA-pr-was">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PjY-cT-Lmw" firstAttribute="trailing" secondItem="A6f-7B-GLC" secondAttribute="trailing" constant="16" id="76S-b8-mXO"/>
                             <constraint firstItem="5uZ-qc-V2E" firstAttribute="centerX" secondItem="R4k-tR-aKZ" secondAttribute="centerX" id="DG2-9I-1dt"/>
                             <constraint firstItem="h79-5W-I2z" firstAttribute="centerX" secondItem="R4k-tR-aKZ" secondAttribute="centerX" id="FXC-Mf-gX5"/>
+                            <constraint firstItem="QnA-pr-was" firstAttribute="centerX" secondItem="R4k-tR-aKZ" secondAttribute="centerX" id="M4O-kc-TUs"/>
                             <constraint firstItem="O0p-FH-ivy" firstAttribute="centerX" secondItem="R4k-tR-aKZ" secondAttribute="centerX" id="Vpr-Gh-gSP"/>
                             <constraint firstItem="h79-5W-I2z" firstAttribute="top" secondItem="O0p-FH-ivy" secondAttribute="bottom" constant="40" id="Wgu-08-1rc"/>
                             <constraint firstItem="9Oy-n2-m8D" firstAttribute="top" secondItem="5uZ-qc-V2E" secondAttribute="bottom" id="XNH-hT-zug"/>
                             <constraint firstItem="O0p-FH-ivy" firstAttribute="top" secondItem="R4k-tR-aKZ" secondAttribute="topMargin" constant="60" id="aur-2n-x3X"/>
                             <constraint firstItem="9Oy-n2-m8D" firstAttribute="centerX" secondItem="R4k-tR-aKZ" secondAttribute="centerX" id="ijP-1L-ueg"/>
+                            <constraint firstItem="QnA-pr-was" firstAttribute="centerY" secondItem="R4k-tR-aKZ" secondAttribute="centerY" id="q6b-Cx-U36"/>
                             <constraint firstItem="5uZ-qc-V2E" firstAttribute="top" secondItem="h79-5W-I2z" secondAttribute="bottom" constant="40" id="qbR-1I-H7b"/>
                             <constraint firstItem="A6f-7B-GLC" firstAttribute="top" secondItem="PjY-cT-Lmw" secondAttribute="top" constant="8" id="zDf-2S-8Z8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PjY-cT-Lmw"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="9cY-Nt-05E" id="q3i-J1-Anw"/>
+                        <outlet property="passTxt" destination="CpT-st-Nu8" id="IN7-hH-JPo"/>
+                        <outlet property="spinner" destination="QnA-pr-was" id="Urq-AN-SAY"/>
                         <segue destination="Tvc-Dq-3aG" kind="show" identifier="toCreateAccount" id="sAP-ho-NaB"/>
                     </connections>
                 </viewController>
@@ -442,7 +454,6 @@
         <!--Avatar PickerVC-->
         <scene sceneID="eWs-q8-UUs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hhS-tJ-P8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ihz-ix-wx2" customClass="AvatarPickerVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N0i-YT-ZPd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -527,6 +538,7 @@
                         <outlet property="segmentControl" destination="Ods-nV-PWN" id="kN1-Bg-Ksq"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhS-tJ-P8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3028" y="-115.59220389805098"/>
         </scene>
