@@ -20,7 +20,7 @@ let URL_USER_ADD = "\(BASE_URL)user/add"
 let SMACK_PURPLE_PLACEHOLDER = #colorLiteral(red: 0.2588235294, green: 0.3294117647, blue: 0.7254901961, alpha: 0.5067958048)
 
 // Notification Constants
-let NOTIF_USER_DATA_DID_CHANGE = Notification.init(name: "notifUserDataChanged")
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 
 // Seques
 let TO_LOGIN = "toLogin"
