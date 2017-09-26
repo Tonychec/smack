@@ -24,6 +24,7 @@
 		CC4C6ED91F6A764000A8FE22 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4C6ED81F6A764000A8FE22 /* MessageService.swift */; };
 		CC4C6EDC1F6A76B700A8FE22 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4C6EDB1F6A76B700A8FE22 /* Channel.swift */; };
 		CC6712731F6AB57E0016EC1A /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6712721F6AB57E0016EC1A /* ChannelCell.swift */; };
+		CC8F42431F77E6AC00C390ED /* SoketSetvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8F42421F77E6AC00C390ED /* SoketSetvice.swift */; };
 		CC9C14BB1F66A02A006826D6 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C14BA1F66A02A006826D6 /* AvatarPickerVC.swift */; };
 		CC9C14BD1F66A477006826D6 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C14BC1F66A477006826D6 /* AvatarCell.swift */; };
 		CC9C14BF1F66C6E1006826D6 /* CurcleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C14BE1F66C6E1006826D6 /* CurcleImage.swift */; };
@@ -55,6 +56,7 @@
 		CC4C6ED81F6A764000A8FE22 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		CC4C6EDB1F6A76B700A8FE22 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		CC6712721F6AB57E0016EC1A /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		CC8F42421F77E6AC00C390ED /* SoketSetvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoketSetvice.swift; sourceTree = "<group>"; };
 		CC9C14BA1F66A02A006826D6 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		CC9C14BC1F66A477006826D6 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		CC9C14BE1F66C6E1006826D6 /* CurcleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurcleImage.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				CCD9C3601F63FACC00D38CF3 /* AuthService.swift */,
 				CCD9C3641F641E1A00D38CF3 /* UserDataService.swift */,
 				CC4C6ED81F6A764000A8FE22 /* MessageService.swift */,
+				CC8F42421F77E6AC00C390ED /* SoketSetvice.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				CC0876771F5C0CFB001B9B30 /* GradientView.swift in Sources */,
 				CC0876711F5C02D4001B9B30 /* ChannelVC.swift in Sources */,
 				CCA52E471F6AC4E200C6DDE5 /* AddChannelVC.swift in Sources */,
+				CC8F42431F77E6AC00C390ED /* SoketSetvice.swift in Sources */,
 				CC9C14BD1F66A477006826D6 /* AvatarCell.swift in Sources */,
 				CC4014941F5997E700EA23E1 /* AppDelegate.swift in Sources */,
 				CC08767E1F5C28AB001B9B30 /* CreateAcountVC.swift in Sources */,
