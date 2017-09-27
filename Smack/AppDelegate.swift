@@ -34,11 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        SoketSetvice.instance.establishConnection()
+        SoketService.instance.establishConnection()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        SoketSetvice.instance.closeConnection()
+        SoketService.instance.closeConnection()
     }
 
 

@@ -10,15 +10,24 @@ import UIKit
 
 class MessageCell: UITableViewCell {
 
+    // Outlets
+    @IBOutlet weak var profileImg: CurcleImage!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var timeStamp: UILabel!
+    @IBOutlet weak var messageBodyText: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configureCell(message: Message) {
+        messageBodyText.text = message.message
+        timeStamp.text = message.timeStamp
+        userName.text = message.userName
+        profileImg.image = UIImage(named: message.userAvatar)
+        profileImg.backgroundColor = UserDataServece.instance.returnUIColor(components: message.userAvatarColor)
     }
 
 }
