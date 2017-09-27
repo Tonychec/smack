@@ -34,6 +34,7 @@
 		CCD9C3611F63FACC00D38CF3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9C3601F63FACC00D38CF3 /* AuthService.swift */; };
 		CCD9C3631F640E1F00D38CF3 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9C3621F640E1F00D38CF3 /* RoundedButton.swift */; };
 		CCD9C3651F641E1B00D38CF3 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9C3641F641E1A00D38CF3 /* UserDataService.swift */; };
+		CCFF579B1F7BC0910084BC19 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFF579A1F7BC0910084BC19 /* KeyboardBoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		CCF2DED01F59AF3D00B88A9A /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		CCF2DED11F59AF3E00B88A9A /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CCF2DED21F59AF3E00B88A9A /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		CCFF579A1F7BC0910084BC19 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		CC0876751F5C0CDA001B9B30 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CCFF579A1F7BC0910084BC19 /* KeyboardBoundView.swift */,
 				CC0876761F5C0CFB001B9B30 /* GradientView.swift */,
 				CCD9C3621F640E1F00D38CF3 /* RoundedButton.swift */,
 				CC9C14BC1F66A477006826D6 /* AvatarCell.swift */,
@@ -336,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFF579B1F7BC0910084BC19 /* KeyboardBoundView.swift in Sources */,
 				CC38DD711F693EE6009D30A4 /* ProfileVC.swift in Sources */,
 				CC6712731F6AB57E0016EC1A /* ChannelCell.swift in Sources */,
 				CC0876741F5C077C001B9B30 /* SWRevealViewController.m in Sources */,
